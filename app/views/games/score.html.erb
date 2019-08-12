@@ -1,0 +1,24 @@
+<div class="container">
+  <div><h2>Score:</h2></div>
+
+  <div class="tile-container">
+
+    <p class="score"><%= @message_hash[:score] %></p>
+  </div>
+</div>
+
+<div class="base-container">
+  <div class="form-container-score">
+    <div>
+      <p class="results-message"><%= @message_hash[:message] %></p>
+    </div>
+    <div>
+      <p class="label">Our word: </p>
+      <p class="results-message"><%= @message_hash[:our_word] %></p>
+    </div>
+    <div>
+      <p class="label">Your word: </p>
+      <p class="results-message"><%= @message_hash[:your_word] %></p>
+    </div>
+  </div>
+</div>
