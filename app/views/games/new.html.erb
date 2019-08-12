@@ -10,10 +10,10 @@
 <div class="base-container">
   <div class="form-container">
     <form action="score">
-      <input type="text" name="word">
+      <input id = "text" type="text" name="word">
       <input id="letters" name="letters" type="hidden" value="<%= @letters.join("") %>"/>
       <input id="time" name="time" type="hidden" value="<%= @time_start %>"/>
-      <input type="submit" value="Check" class="mauve_button">
+      <input id="check" type="submit" value="Check" class="mauve_button">
     </form>
     <p>What is the longest word that you can find?</p>
   </div>

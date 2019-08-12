@@ -32,7 +32,7 @@ class GamesController < ApplicationController
     result = JSON.parse(html_file)
 
     message_hash[:score] = 0
-    message_hash[:message] = "That is not an english word."
+    message_hash[:message] = "That is not an English word."
     return message_hash unless result["error"].nil?
 
     message_hash[:score] = result["length"].to_i
